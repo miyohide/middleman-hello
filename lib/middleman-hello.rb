@@ -1,4 +1,4 @@
-require "middleman/hello/version"
+require "middleman-hello/version"
 
 module Middleman
   module Hello
