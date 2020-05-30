@@ -1,8 +1,7 @@
-require "middleman-hello/version"
+require 'middleman-core'
+require 'middleman-hello/version'
 
-module Middleman
-  module Hello
-    class Error < StandardError; end
-    # Your code goes here...
-  end
+::Middleman::Extensions.register(:hello) do
+  require 'middleman-hello/extension'
+  ::Middleman::Hello::Extension
 end
