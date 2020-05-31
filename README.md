@@ -1,43 +1,14 @@
-# Middleman::Hello
+# これはなにか
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/middleman/hello`. To experiment with that code, run `bin/console` for an interactive prompt.
+[middleman](https://middlemanapp.com/jp/)のカスタム拡張を作成してみたサンプルです。
+以下の記事を参照しました。
 
-TODO: Delete this and the text above, and describe your gem
+- [Middleman カスタム拡張チュートリアル](https://qiita.com/yterajima/items/42ea2529795823832d5c)
 
-## Installation
+# 使用バージョン
 
-Add this line to your application's Gemfile:
+- [middleman](https://middlemanapp.com/jp/) 4.3.7
 
-```ruby
-gem 'middleman-hello'
-```
+# できること
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install middleman-hello
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/middleman-hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Middleman::Hello project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/middleman-hello/blob/master/CODE_OF_CONDUCT.md).
+`config.rb`に`activate :hello`と書いたあとに、テンプレートに`<%= say_hello %>`と書くと`hello from extension`に置き換えられます。
